@@ -1,6 +1,16 @@
 package com.Grammer.插入排序;
 
+import com.swordToOffer.Array;
+
+import java.util.Arrays;
+
 public class InsertSort004 {
+    public static void main(String[] args) {
+        int[] arr={52,10,36,96,2,46,87,15};
+        InsertSort004 insertSort004 = new InsertSort004();
+        insertSort004.sort(arr);
+        System.out.println(Arrays.toString(arr));
+    }
     //采用移动法进行插入排序O(n^2)
     public void sort(int[] arr){
         //1.judge数组的合法性
