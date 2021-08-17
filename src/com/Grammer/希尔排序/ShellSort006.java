@@ -9,7 +9,7 @@ public class ShellSort006 {
         }
         int len=arr.length;
         //2.确定希尔增量
-        for(int gap=len<<2;gap>0;gap/=2){
+        for(int gap=len>>2;gap>0;gap/=2){
             for(int i=gap;i<len;i++){
                 int j=i;
                 while(j-gap>0&&arr[j-gap]>arr[j]){
